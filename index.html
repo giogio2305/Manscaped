@@ -1,0 +1,160 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    @font-face {
+    font-family: 'Graphik Regular';
+    src: url('./assets/graphik-regular.woff2');
+    src: local('Graphik Regular'), local('Graphik Regular'),
+        url('./assets/graphik-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik Medium';
+    src: url('./assets/graphik-medium.woff2');
+    src: local('Graphik Medium'), local('Graphik Medium'),
+        url('./assets/graphik-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik Semibold';
+    src: url('./assets/graphik-semibold.woff2');
+    src: local('Graphik Semibold'), local('Graphik Semibold'),
+        url('./assets/graphik-semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Manscaped';
+    src: url('./assets/manscaped.woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+#package{
+    font-family: 'Graphik Regular',sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#package .image-wrapper{
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+z-index:-1
+}
+#package .image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#package .text-wrapper{width: 88vw; height: auto; display: flex;align-items: center; justify-content: end;}
+#package .text-wrapper .pub{display: flex;flex-direction: column;align-items: start;  width: 40%;padding:20px 4px;margin-left:100px ;}
+#package .text-wrapper .pub .title{font-family: 'Manscaped',serif;font-size: 74px;text-transform: uppercase;color: #fff;margin: 0;}
+#package .text-wrapper .pub .title .mini{font-size: 34px;}
+#package .text-wrapper .pub .title .color{color: #b98141;}
+#package .text-wrapper .pub p{ width: 230px;margin: 28px 0;font-size: 16px;font-weight: 500;color: #d1d1d1;font-family: 'Graphik Medium',sans-serif;}
+#package .text-wrapper .pub button{min-width: 135px; height: 54px; margin-top: 3px; padding: 12px 32px;border: none; border-radius: 28px; cursor: pointer; background-color: #b98141;color: #fff;font-size: 19px;font-family: 'Graphik Semibold',sans-serif;font-weight: 600;}
+#package .text-wrapper .pub button:hover{background-color: #fff;color: #000; transition: all .25s ease-in-out;}
+@media all and (max-width:912px) {
+    #package .text-wrapper{width: 92vw; min-height: 100vh; display: flex;flex-direction: column; align-items: center; justify-content: end;}
+    #package .text-wrapper .pub{width: 88vw; height: 50%; margin-left: 0px; align-items: center; text-align: center;}
+    #package .text-wrapper .pub .title{font-size: 48px;width: 295px; text-align: center;}
+    #package .text-wrapper .pub p{font-size: 16px;margin: 8px 0;}
+}
+</style>
+<section id="package">
+    <div class="image-wrapper">
+        <picture>
+            <source type="image/webp" media="(min-width: 1366px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_webp,h_1336,w_5120,f_auto,q_auto/v1/site-assets/strapi-assets/performance_package_5_0_2560_0d900da149?_a=AXAH4nI0 5120w">
+            <source media="(min-width: 1366px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_jpg,h_1336,w_5120,f_auto,q_auto/v1/site-assets/strapi-assets/performance_package_5_0_2560_0d900da149?_a=AXAH4nI0 5120w">
+            <source type="image/webp" media="(min-width: 1024px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_webp,h_1336,w_2732,f_auto,q_auto/v1/site-assets/strapi-assets/performance_package_5_0_1366_3c5192a716?_a=AXAH4nI0 2732w">
+            <source media="(min-width: 1024px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_jpg,h_1336,w_2732,f_auto,q_auto/v1/site-assets/strapi-assets/performance_package_5_0_1366_3c5192a716?_a=AXAH4nI0 2732w">
+            <source type="image/webp" media="(min-width: 768px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_webp,h_1336,w_2048,f_auto,q_auto/v1/site-assets/strapi-assets/performance_package_5_0_1024_180cee3619?_a=AXAH4nI0 2048w">
+            <source media="(min-width: 768px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_jpg,h_1336,w_2048,f_auto,q_auto/v1/site-assets/strapi-assets/performance_package_5_0_1024_180cee3619?_a=AXAH4nI0 2048w">
+            <source type="image/webp" media="(min-width: 480px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_webp,h_1148,w_1536,f_auto,q_auto/v1/site-assets/strapi-assets/performance_package_5_0_768_c8b0e2dcb0?_a=AXAH4nI0 1536w">
+            <source media="(min-width: 480px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_jpg,h_1148,w_1536,f_auto,q_auto/v1/site-assets/strapi-assets/performance_package_5_0_768_c8b0e2dcb0?_a=AXAH4nI0 1536w">
+            <source type="image/webp" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_webp,h_1148,w_960,f_auto,q_auto/v1/site-assets/strapi-assets/performance_package_5_0_480_905d843454?_a=AXAH4nI0 960w">
+            <img style="opacity: 1;" sizes="960px" decoding="async" loading="lazy" alt="" src="https://res.cloudinary.com/manscaped-prod/image/upload/f_jpg,h_1148,w_960,f_auto,q_auto/v1/site-assets/strapi-assets/performance_package_5_0_480_905d843454?_a=AXAH4nI0" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_jpg,h_1148,w_960,f_auto,q_auto/v1/site-assets/strapi-assets/performance_package_5_0_480_905d843454?_a=AXAH4nI0 960w">
+        </picture>
+    </div>
+
+    <div class="text-wrapper">
+        <div class="pub">
+            <h2 class="title"><span class="mini">THE</span><br>PERFORMANCE PACKAGE <span class="color">5.0</span> <span class="color">ULTRA</span></h2>
+            <p>Offre exclusive : Boxer + Trousse de toilette</p>
+            <button>Commander</button>
+        </div>
+    </div>
+</section>
+
+<section id="kit">
+    <div class="image-wrapper">
+        <picture>
+            <source type="image/webp" media="(min-width: 1366px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_webp,h_1336,w_5120,f_auto,q_auto/v1/site-assets/strapi-assets/2560_BHPK_c268df6f43/2560_BHPK_c268df6f43?_a=AXAH4nI0 5120w">
+            <source media="(min-width: 1366px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_jpg,h_1336,w_5120,f_auto,q_auto/v1/site-assets/strapi-assets/2560_BHPK_c268df6f43/2560_BHPK_c268df6f43?_a=AXAH4nI0 5120w">
+            <source type="image/webp" media="(min-width: 1024px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_webp,h_1336,w_2732,f_auto,q_auto/v1/site-assets/strapi-assets/1366_BHPK_1_aa2f450c7e/1366_BHPK_1_aa2f450c7e?_a=AXAH4nI0 2732w">
+            <source media="(min-width: 1024px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_jpg,h_1336,w_2732,f_auto,q_auto/v1/site-assets/strapi-assets/1366_BHPK_1_aa2f450c7e/1366_BHPK_1_aa2f450c7e?_a=AXAH4nI0 2732w">
+            <source type="image/webp" media="(min-width: 768px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_webp,h_1336,w_2047,f_auto,q_auto/v1/site-assets/strapi-assets/1024_BHPK_f78bf77cf1/1024_BHPK_f78bf77cf1?_a=AXAH4nI0 2047w">
+            <source media="(min-width: 768px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_jpg,h_1336,w_2047,f_auto,q_auto/v1/site-assets/strapi-assets/1024_BHPK_f78bf77cf1/1024_BHPK_f78bf77cf1?_a=AXAH4nI0 2047w">
+            <source type="image/webp" media="(min-width: 480px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_webp,h_1148,w_1536,f_auto,q_auto/v1/site-assets/strapi-assets/768x574_BHPK_2e47073b3f/768x574_BHPK_2e47073b3f?_a=AXAH4nI0 1536w">
+            <source media="(min-width: 480px)" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_jpg,h_1148,w_1536,f_auto,q_auto/v1/site-assets/strapi-assets/768x574_BHPK_2e47073b3f/768x574_BHPK_2e47073b3f?_a=AXAH4nI0 1536w">
+            <source type="image/webp" sizes="960px" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_webp,h_1148,w_960,f_auto,q_auto/v1/site-assets/strapi-assets/480x574_BHPK_4d49931922/480x574_BHPK_4d49931922?_a=AXAH4nI0 960w">
+            <img data-main-image="" style="opacity: 1;" sizes="960px" decoding="async" loading="lazy" alt="The Beard Hedger™ Pro Kit" src="https://res.cloudinary.com/manscaped-prod/image/upload/f_jpg,h_1148,w_960,f_auto,q_auto/v1/site-assets/strapi-assets/480x574_BHPK_4d49931922/480x574_BHPK_4d49931922?_a=AXAH4nI0" srcset="https://res.cloudinary.com/manscaped-prod/image/upload/f_jpg,h_1148,w_960,f_auto,q_auto/v1/site-assets/strapi-assets/480x574_BHPK_4d49931922/480x574_BHPK_4d49931922?_a=AXAH4nI0 960w">
+        </picture>
+    </div>
+
+    <div class="text-wrapper">
+        <div class="pub">
+            <h2 class="title"><span class="mini">THE</span><br>BEARD HEDGER™ PRO KIT</h2>
+            <p>Offre exclusive : Beard Accessory Pack</p>
+            <button>Commander</button>
+        </div>
+    </div>
+</section>
+<style>
+#kit{
+    font-family: 'Graphik Regular',sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#kit .image-wrapper{
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+z-index:-1
+}
+#kit .image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#kit .text-wrapper{width: 88vw; height: auto; display: flex;align-items: center; justify-content: start;}
+#kit .text-wrapper .pub{display: flex;flex-direction: column;align-items: start;  width: 40%;padding:20px 4px;}
+#kit .text-wrapper .pub .title{font-family: 'Manscaped',serif;font-size: 74px;text-transform: uppercase;color: #fff;margin: 0;}
+#kit .text-wrapper .pub .title .mini{font-size: 34px;}
+#kit .text-wrapper .pub p{ width: 230px;margin: 20px 0;font-size: 16px;font-weight: 500;color: #d1d1d1;font-family: 'Graphik Medium',sans-serif;}
+#kit .text-wrapper .pub button{min-width: 135px; height: 54px; margin-top: 3px; padding: 12px 32px;border: none; border-radius: 28px; cursor: pointer; background-color: #b98141;color: #fff;font-size: 19px;font-family: 'Graphik Semibold',sans-serif;font-weight: 600;}
+#kit .text-wrapper .pub button:hover{background-color: #fff;color: #000; transition: all .25s ease-in-out;}
+
+@media all and (max-width:912px) {
+    #kit .text-wrapper{width: 92vw; min-height: 100vh; display: flex;flex-direction: column; align-items: center; justify-content: start;margin-top: 40px;}
+    #kit .text-wrapper .pub{width: 88vw; height: 50%; margin-left: 0px; align-items: center; text-align: center;}
+    #kit .text-wrapper .pub .title{font-size: 48px;width: 295px; text-align: center;}
+    #kit .text-wrapper .pub p{font-size: 16px;margin: 10px 0;}
+}
+</style>
